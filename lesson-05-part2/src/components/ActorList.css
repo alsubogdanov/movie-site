@@ -1,0 +1,43 @@
+.actor-list__title {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+/* רשת: כרטיסים צרים יותר מכרטיסי הסרטים */
+.actor-list__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  gap: 20px;
+}
+
+/* רווח בין שתי רשימות אחת אחרי השנייה */
+.actor-list + .actor-list {
+  margin-top: 48px;
+}
+
+/* הודעה כשהרשימה ריקה */
+.actor-list__empty {
+  padding: 32px;
+  border: 1px dashed var(--border);
+  border-radius: var(--radius);
+  text-align: center;
+  color: var(--muted);
+}
+
+/* רווח מעל שורת החיפוש, כשהיא באה אחרי רשימה */
+.actor-list + .toolbar {
+  margin-top: 48px;
+}
+
+/* חלון "הסרטים של ..." מעל רשימת השחקנים */
+.actor-movies {
+  margin-bottom: 48px;
+  padding: 24px;
+  border-radius: var(--radius);
+  background: var(--accent-soft);
+}
+
+.actor-movies__close {
+  margin-top: 20px;
+}

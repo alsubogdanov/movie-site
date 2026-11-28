@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+  <rect width="300" height="300" fill="#2f5d62"/>
+  <circle cx="150" cy="118" r="54" fill="#ffffff" opacity="0.16"/>
+  <path d="M60 300 C60 222 100 190 150 190 C200 190 240 222 240 300 Z" fill="#ffffff" opacity="0.16"/>
+  <text x="150" y="134" text-anchor="middle" font-family="Georgia, serif" font-size="44" fill="#ffffff">LD</text>
+</svg>

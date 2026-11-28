@@ -1,0 +1,79 @@
+.actor-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.actor-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 24px rgba(38, 36, 31, 0.1);
+}
+
+/* תמונה מרובעת */
+.actor-card__photo {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  background: var(--border);
+}
+
+.actor-card__body {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex-grow: 1;
+  padding: 12px 14px 14px;
+}
+
+.actor-card__name {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.actor-card__meta {
+  font-size: 14px;
+  color: var(--muted);
+}
+
+/* פופולריות ואוסקר — בתחתית הכרטיס */
+.actor-card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 8px;
+  font-size: 13px;
+}
+
+.actor-card__popularity {
+  padding: 2px 10px;
+  border-radius: 999px;
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.actor-card__oscar {
+  font-weight: 700;
+  color: var(--gold);
+}
+
+/* כרטיס שאפשר ללחוץ עליו */
+.actor-card--clickable {
+  cursor: pointer;
+}
+
+/* השחקן שנבחר */
+.actor-card--selected {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-soft);
+}
+
+.actor-card__movies {
+  font-size: 13px;
+  color: var(--muted);
+}
